@@ -13,6 +13,11 @@ const VehicleSchema = new mongoose.Schema({
         ref: "worker",
         required: true,
         unique: true,    },
+        
+    deployed:{
+        type: Boolean,
+        default: false,
+    }
 })
 
 const Vehicle = mongoose.model('vehicle', VehicleSchema);
