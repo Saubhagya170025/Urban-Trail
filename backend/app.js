@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import vehicleRoutes from "./routes/vehicle.routes.js"
+import vehicleRoutes from "./routes/vehicles.routes.js"
 
 //setup all the middlewares here
 

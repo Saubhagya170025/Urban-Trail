@@ -2,7 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 const { Schema } = mongoose;
 
-const WorkerSchema = new mongoose.Schema({
+const DriverSchema = new mongoose.Schema({
     name:{
         type: String,
         required: true,
@@ -16,5 +16,5 @@ const WorkerSchema = new mongoose.Schema({
     },
 })
 
-const worker = mongoose.model('worker', WorkerSchema);
-export default worker;
+const driver = mongoose.model('driver', DriverSchema);
+export default driver;

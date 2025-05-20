@@ -3,18 +3,18 @@ import mongoose from 'mongoose'
 const { Schema } = mongoose;
 
 const VehicleSchema = new mongoose.Schema({
-    NumberPlate:{
+    NumberPlate: {
         type: String,
         required: true,
         trim: true,
     },
-    Driver:{
-        type: Schema.Types.name,
-        ref: "worker",
+    Driver: {
+        type: String,
         required: true,
-        unique: true,    },
+        trim: true,
+    },
         
-    deployed:{
+    deployed: {
         type: Boolean,
         default: false,
     }
