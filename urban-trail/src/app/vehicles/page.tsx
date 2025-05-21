@@ -11,6 +11,15 @@ type Vehicle = {
   }
 }
 
+//For homepage card data
+
+export const vehicleCardData = {
+  title: "Vehicle Deployed",
+  description: "Live vehicle deployment status",
+  content: "Click to view all deployed vehicles and drivers",
+  href: "/vehicles"
+}
+
 export default function Page() {
   const [vehicles, setVehicles] = useState<Vehicle[]>([])
   const [loading, setLoading] = useState(true)
